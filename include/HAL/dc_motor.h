@@ -1,19 +1,7 @@
-/******************************************************************************
- *
- * Module: DC motor
- *
- * File Name: dc_motor.h
- *
- * Description: Header file for the DC motor driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef DC_MOTOR_H_
 #define DC_MOTOR_H_
 
-#include "std_types.h"
+#include "../MCAL/std_types.h"
 
 /*******************************************************************************
  *                                Definitions                                  *

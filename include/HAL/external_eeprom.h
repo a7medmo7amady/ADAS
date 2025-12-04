@@ -1,20 +1,7 @@
- /******************************************************************************
- *
- * Module: External EEPROM
- *
- * File Name: external_eeprom.h
- *
- * Description: Header file for the External EEPROM Memory
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
-
 #ifndef EXTERNAL_EEPROM_H_
 #define EXTERNAL_EEPROM_H_
 
-#include "std_types.h"
+#include "../MCAL/std_types.h"
 
 /*******************************************************************************
  *                      Preprocessor Macros                                    *

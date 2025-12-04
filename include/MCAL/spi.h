@@ -1,15 +1,3 @@
- /******************************************************************************
- *
- * Module: SPI
- *
- * File Name: spi.h
- *
- * Description: Header file for the SPI AVR driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef SPI_H_
 #define SPI_H_
 

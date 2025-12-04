@@ -1,17 +1,6 @@
- /******************************************************************************
- *
- * Module: UART
- *
- * File Name: uart.h
- *
- * Description: Header file for the UART AVR driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef UART_H_
 #define UART_H_
+#define F_CPU 1600000UL
 
 #include "std_types.h"
 

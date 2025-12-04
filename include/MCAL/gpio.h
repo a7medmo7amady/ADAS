@@ -1,15 +1,3 @@
- /******************************************************************************
- *
- * Module: GPIO
- *
- * File Name: gpio.h
- *
- * Description: Header file for the AVR GPIO driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef GPIO_H_
 #define GPIO_H_
 
@@ -81,7 +69,7 @@ uint8 GPIO_readPin(uint8 port_num, uint8 pin_num);
  * If the direction value is PORT_OUTPUT all pins in this port should be output pins.
  * If the input port number is not correct, The function will not handle the request.
  */
-void GPIO_setupPortDirection(uint8 port_num, uint8 direction);
+void GPIO_setupPortDirection(uint8 port_num, GPIO_PortDirectionType direction);
 
 /*
  * Description :

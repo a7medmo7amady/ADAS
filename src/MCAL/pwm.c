@@ -1,17 +1,6 @@
-/******************************************************************************
- *
- * Module: Pwm
- *
- * File Name: pwm.c
- *
- * Description: source file for the pwm driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-#include "pwm.h"
+#include "../../include/MCAL/pwm.h"
 #include "avr/io.h"
-#include "common_macros.h"
+#include "../../include/MCAL/common_macros.h"
 /***********************************************************
  *                Functions Definitions                     *
  ***********************************************************/

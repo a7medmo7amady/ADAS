@@ -1,14 +1,3 @@
-/******************************************************************************
- *
- * Module: Timer
- *
- * File Name: timer.h
- *
- * Description: Header file for the timer driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
 #ifndef TIMER_H_
 #define TIMER_H_
 

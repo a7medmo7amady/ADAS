@@ -1,18 +1,6 @@
- /******************************************************************************
- *
- * Module: SPI
- *
- * File Name: spi.c
- *
- * Description: Source file for the SPI AVR driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
-#include "spi.h"
-#include "gpio.h" /* To Setup the SPI pins direction */
-#include "common_macros.h" /* To use the macros like SET_BIT */
+#include "../../include/MCAL/spi.h"
+#include "../../include/MCAL/gpio.h" /* To Setup the SPI pins direction */
+#include "../../include/MCAL/common_macros.h" /* To use the macros like SET_BIT */
 #include "avr/io.h" /* To use the SPI Registers */
 
 /*******************************************************************************

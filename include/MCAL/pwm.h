@@ -1,15 +1,3 @@
-/******************************************************************************
- *
- * Module: Pwm
- *
- * File Name: pwm.h
- *
- * Description: Header file for the LCD driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef PWM_H_
 #define PWM_H_
 #include "std_types.h"

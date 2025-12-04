@@ -1,19 +1,8 @@
- /******************************************************************************
- *
- * Module: LCD
- *
- * File Name: lcd.h
- *
- * Description: Header file for the LCD driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef LCD_H_
 #define LCD_H_
+#define F_CPU 1600000UL
 
-#include "std_types.h"
+#include "../MCAL/std_types.h"
 
 /*******************************************************************************
  *                                Definitions                                  *
@@ -99,11 +88,15 @@ void LCD_moveCursor(uint8 row,uint8 col);
  */
 void LCD_displayStringRowColumn(uint8 row,uint8 col,const char *Str);
 
+
+void itoa1(sint32 num, char *str, sint32 base);
+
+
 /*
  * Description :
  * Display the required decimal value on the screen
  */
-void LCD_intgerToString(int data);
+void LCD_integerToString(sint32 data);
 
 /*
  * Description :

@@ -1,19 +1,7 @@
-/******************************************************************************
- *
- * Module: Timer
- *
- * File Name: timer.c
- *
- * Description: source file for the timer driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include "timer.h"
-#include "common_macros.h"
+#include "../../include/MCAL/timer.h"
+#include "../../include/MCAL/common_macros.h"
 
 /******************************************************************
  *                        Global Variables                        *

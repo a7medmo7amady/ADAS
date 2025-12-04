@@ -1,20 +1,8 @@
-/******************************************************************************
- *
- * Module: DC motor
- *
- * File Name: lcd.c
- *
- * Description: Source file for the DC motor driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
-#include "dc_motor.h" /* header file of DC motor*/
-#include "common_macros.h"
-#include "gpio.h" /* header file of GPIO*/
+#include "../../include/HAL/dc_motor.h" /* header file of DC motor*/
+#include "../../include/MCAL/common_macros.h"
+#include "../../include/MCAL/gpio.h" /* header file of GPIO*/
 #include "avr/io.h" /* To use the DC motor register*/
-#include "pwm.h" /* header file of PWM*/
+#include "../../include/MCAL/pwm.h" /* header file of PWM*/
 /*******************************************************************************
  *                      Functions Definitions                                  *
  *******************************************************************************/

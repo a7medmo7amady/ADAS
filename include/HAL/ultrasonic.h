@@ -1,22 +1,12 @@
-/******************************************************************************
- *
- * Module: HC-SR04 (ultrasonic sensor)
- *
- * File Name: ultrasonic.h
- *
- * Description: Header file for the HC-SR04 (ultrasonic sensor) driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
 #ifndef ULTRASONIC_H_
 #define ULTRASONIC_H_
+#define F_CPU 1600000UL
 
 #define ULTRASONIC_TRIGGER_PORTID PORTB_ID
 #define ULTRASONIC_TRIGGER_PINID  PIN5_ID
 
 /*include the standard types header file */
-#include "std_types.h"
+#include "../MCAL/std_types.h"
 /*
  *  Description :1- Initialize the ICU driver as required.
                  2- Setup the ICU call back function.

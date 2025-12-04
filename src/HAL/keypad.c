@@ -1,16 +1,5 @@
- /******************************************************************************
- *
- * Module: KEYPAD
- *
- * File Name: keypad.c
- *
- * Description: Source file for the Keypad driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-#include "keypad.h"
-#include "gpio.h"
+#include "../../include/HAL/keypad.h"
+#include "../../include/MCAL/gpio.h"
 #include <util/delay.h>
 
 /*******************************************************************************

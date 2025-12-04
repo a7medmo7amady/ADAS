@@ -1,16 +1,5 @@
- /******************************************************************************
- *
- * Module: External EEPROM
- *
- * File Name: external_eeprom.c
- *
- * Description: Source file for the External EEPROM Memory
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-#include "external_eeprom.h"
-#include "twi.h"
+#include "../../include/HAL/external_eeprom.h"
+#include "../../include/MCAL/twi.h"
 
 uint8 EEPROM_writeByte(uint16 u16addr, uint8 u8data)
 {

@@ -1,19 +1,8 @@
- /******************************************************************************
- *
- * Module: KEYPAD
- *
- * File Name: keypad.h
- *
- * Description: Header file for the Keypad driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #ifndef KEYPAD_H_
 #define KEYPAD_H_
+#define F_CPU 1600000UL
 
-#include "std_types.h"
+#include "../MCAL/std_types.h"
 
 /*******************************************************************************
  *                                Definitions                                  *

@@ -1,19 +1,8 @@
-/******************************************************************************
- *
- * Module: HC-SR04 (ultrasonic sensor)
- *
- * File Name: ultrasonic.c
- *
- * Description: source file for the HC-SR04 (ultrasonic sensor) driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
 /* include the header file of the used driver*/
-#include "ultrasonic.h"
-#include "gpio.h"
-#include "icu.h"
-#include "common_macros.h"
+#include "../../include/HAL/ultrasonic.h"
+#include "../../include/MCAL/gpio.h"
+#include "../../include/MCAL/icu.h"
+#include "../../include/MCAL/common_macros.h"
 #include <util/delay.h> /*include delay function*/
 
 /*for variable : g is refer to -> global*/

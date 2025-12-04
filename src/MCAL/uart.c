@@ -1,18 +1,6 @@
- /******************************************************************************
- *
- * Module: UART
- *
- * File Name: uart.c
- *
- * Description: Source file for the UART AVR driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
-#include "uart.h"
+#include "../../include/MCAL/uart.h"
 #include "avr/io.h" /* To use the UART Registers */
-#include "common_macros.h" /* To use the macros like SET_BIT */
+#include "../../include/MCAL/common_macros.h" /* To use the macros like SET_BIT */
 
 /*******************************************************************************
  *                      Functions Definitions                                  *

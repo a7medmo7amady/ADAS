@@ -1,17 +1,5 @@
- /******************************************************************************
- *
- * Module: GPIO
- *
- * File Name: gpio.c
- *
- * Description: Source file for the AVR GPIO driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
-#include "gpio.h"
-#include "common_macros.h" /* To use the macros like SET_BIT */
+#include "../../include/MCAL/gpio.h"
+#include "../../include/MCAL/common_macros.h" /* To use the macros like SET_BIT */
 #include "avr/io.h" /* To use the IO Ports Registers */
 
 /*

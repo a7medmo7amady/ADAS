@@ -1,18 +1,6 @@
- /******************************************************************************
- *
- * Module: ADC
- *
- * File Name: adc.c
- *
- * Description: Source file for the ATmega16 ADC driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
 #include "avr/io.h" /* To use the ADC Registers */
-#include "adc.h"
-#include "common_macros.h" /* To use the macros like SET_BIT */
+#include "../../include/MCAL/adc.h"
+#include "../../include/MCAL/common_macros.h" /* To use the macros like SET_BIT */
 
 /*******************************************************************************
  *                      Functions Definitions                                  *

@@ -1,19 +1,7 @@
- /******************************************************************************
- *
- * Module: LCD
- *
- * File Name: lcd.c
- *
- * Description: Source file for the LCD driver
- *
- * Author: Esraa Ali
- *
- *******************************************************************************/
-
+#include "../../include/HAL/lcd.h"
 #include <util/delay.h> /* For the delay functions */
-#include "common_macros.h" /* For GET_BIT Macro */
-#include "lcd.h"
-#include "gpio.h"
+#include "../../include/MCAL/common_macros.h" /* For GET_BIT Macro */
+#include "../../include/MCAL/gpio.h"
 
 /*******************************************************************************
  *                      Functions Definitions                                  *
@@ -199,14 +187,59 @@ void LCD_displayStringRowColumn(uint8 row,uint8 col,const char *Str)
 	LCD_displayString(Str); /* display the string */
 }
 
+
+void itoa1(sint32 num, char *str, sint32 base)
+{
+    sint32 i = 0;
+    sint32 isNegative = 0;
+
+    // Handle 0 explicitly, otherwise empty string is printed
+    if (num == 0) {
+        str[i++] = '0';
+        str[i] = '\0';
+        return;
+    }
+
+    // Handle negative numbers only if base is 10
+    if (num < 0 && base == 10) {
+        isNegative = 1;
+        num = -num;
+    }
+
+    // Process individual digits
+    while (num != 0) {
+        sint32 rem = num % base;
+        str[i++] = (rem > 9) ? (rem - 10) + 'a' : rem + '0';
+        num = num / base;
+    }
+
+    // Append negative sign for negative numbers
+    if (isNegative)
+        str[i++] = '-';
+
+    str[i] = '\0'; // Null-terminate string
+
+    // Reverse the string
+    sint32 start = 0;
+    sint32 end = i - 1;
+    while (start < end) {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+
 /*
  * Description :
  * Display the required decimal value on the screen
  */
-void LCD_intgerToString(int data)
+void LCD_integerToString(sint32 data)
 {
-   char buff[16]; /* String to hold the ascii result */
-   itoa(data,buff,10); /* Use itoa C function to convert the data to its corresponding ASCII value, 10 for decimal */
+   sint8 buff[16]; /* String to hold the ascii result */
+   itoa1(data,buff,10); /* Use itoa C function to convert the data to its corresponding ASCII value, 10 for decimal */
    LCD_displayString(buff); /* Display the string */
 }
 
