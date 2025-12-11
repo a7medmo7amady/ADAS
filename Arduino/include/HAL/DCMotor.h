@@ -24,7 +24,7 @@
 #define SPIN_TIME_MS   (ROTATE_TIME_MS * 4) // ~360° spin (tune)
 #define MOVE_STEP_MS   300         // how long to move forward per decision
 
-#define BLOCK_TIME_MS  5000UL      // remember blocked directions for 5s
+#define BLOCK_TIME_MS  10000UL      // remember blocked directions for 10s
 
 /***************** DIRECTION MEMORY *****************/
 
@@ -62,7 +62,7 @@ void setLeft(int dir, int speed) {
   }
   analogWrite(ENA, speed);
 }
-
+// Moving to the Left Dir
 void setRight(int dir, int speed) {
   if (dir > 0) {
     digitalWrite(IN3, HIGH);
