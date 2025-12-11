@@ -12,6 +12,7 @@
 - [ ] Sensor Is a Master And the Slave is the Chip
 - [ ] Make the Sensor check 180 using Servo Motor 
 - [ ] Convert the code into Embedded C code 
+- [ ] Breaks Using the Switch 
 ---
 ## H-bridge
  - [ ] Move in all Dir 
